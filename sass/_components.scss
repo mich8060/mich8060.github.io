@@ -1,0 +1,18 @@
+/* Global */
+html,
+body {          
+	font-family:"Gotham","Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+	font-size:100%;
+	font-smoothing:subpixel-antialiased;
+	height:100%;
+	hyphens:none;
+	text-size-adjust:100%;
+	text-rendering:optimizeLegibility;    
+	
+	@include breakpoint(retina){
+		font-smoothing:antialiased;                                
+	}
+}
+
+::-moz-selection { background:rgba($blue,0.25); }
+::selection { background:rgba($blue,0.25); }
