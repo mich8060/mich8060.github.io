@@ -1,10 +1,10 @@
-.type--sm { font-size: 14px; line-height: 20px; }
-.type--md { font-size: 18px; line-height: 24px; }
-.type--lg { font-size: 24px; line-height: 40px; }
-.type--xl { font-size: 30px; line-height: 48px; }
-.type--xxl { font-size: 36px; line-height: 60px; }
-.type--xxxl { font-size: 48px; line-height: 80px; }
-.type--gigantic { font-size: 60px; line-height: 100px; }
+.type--sm { font-size: 14px; letter-spacing: -0.00px; line-height: 24px; }
+.type--md { font-size: 18px; letter-spacing: -0.00px; line-height: 32px; }
+.type--lg { font-size: 24px; letter-spacing: -0.36px; line-height: 40px; }
+.type--xl { font-size: 30px; letter-spacing: -0.45px; line-height: 48px; }
+.type--xxl { font-size: 36px; letter-spacing: -0.54px; line-height: 60px; }
+.type--xxxl { font-size: 48px; letter-spacing: -0.72px; line-height: 80px; }
+.type--gigantic { font-size: 60px; letter-spacing: -1.00px; line-height: 100px; }
 .type_weight--thin { font-weight: 100; }
 .type_weight--light { font-weight: 200; }
 .type_weight--regular { font-weight: 400; }
