@@ -1,31 +1,28 @@
 $(document).ready(function(){
 	
 	$system = ['.nav'];
-	
-	$.fn.exists = function(url){
-	    var http = new XMLHttpRequest();
-	    	http.open('HEAD', url, false);
-	    	http.send();
-	    return http.status!=404;
-	} 
+	$types = ['components','elements','pages'];
 	
 	$.fn.build = function(component) {         
 		$el = $(this);
 		$classes = $el.attr('class');  
 		$file = component.replace(/\./g,'');
-		if($el.exists("_components/"+$file+".html")){
-			$type = 'components';
-		}else if($el.exists("_elements/"+$file+".html")){
-   			$type = 'elements';
-		}  
-		$.get({
-			url:"_"+$type+"/"+$file+".html",
-			context: document.body
-		},function(data) {                                      
-			$(component).replaceWith(data);
-			$(component).addClass($classes);
-			$(component).attr('data-type',$type);                   
-		});	
+		$url = "_components/"+$file+".html";     
+		
+		$.each($types,function(index,value){
+			$url = "_"+value+"/"+$file+".html";
+			$.ajax({         
+		        async: true,
+		        url:$url, 
+				success:function(data,textStatus,xhr) {  
+					$(component).replaceWith(data);
+					$(component).addClass($classes);
+					$(component).attr('data-type',value);
+				}
+			});
+		});     
+                    
+	
 	}       
 	
 	$.each($system, function(index,value){ if($(value).length){ $(value).build(value); } });
