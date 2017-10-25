@@ -93,7 +93,7 @@ html, body { background: #222222; color: #FFFFFF; font-family: "Gotham","Helveti
 .nav--item { font-size: 14px; letter-spacing: -0.00px; line-height: 24px; font-weight: 200; align-items: center; color: #AAAAAA; display: flex; height: 44px; padding: 0 18px; transition: all 0.15s ease-in-out; }
 .nav--item.active { color: #F96816; }
 .nav--item.active .nav--icon svg { fill: #F96816; }
-.nav--item:hover { background: #363636; color: #FFFFFF; }
+.nav--item:hover { background: #555555; color: #FFFFFF; }
 .nav--item:hover .nav--icon svg { fill: #FFFFFF; }
 .nav--title { font-size: 12px; letter-spacing: -0.00px; line-height: 20px; font-weight: 200; align-items: center; background: #363636; border-bottom: solid 1px #181818; border-top: solid 1px #181818; display: flex; justify-content: space-between; line-height: 32px; padding: 0 16px; text-transform: uppercase; transition: all 0.15s ease-in-out; }
 .nav--title:hover { background: #555555; }
