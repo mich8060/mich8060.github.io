@@ -15,9 +15,7 @@ $(document).ready(function(){
 				$(component).replaceWith(data);
 				$(component).addClass($classes);      
 			}
-		});   
-                    
-	
+		}); 
 	}       
 	
 	$.each($system, function(index,value){ if($(value).length){ $(value).build(value); } });
