@@ -14,7 +14,7 @@
 	@else if $point == retina {
 		@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) { @content; }
 	}
-} 
+}
 
 @mixin aspect-ratio($width, $height) {
   	position: relative;

@@ -30,8 +30,8 @@ body {
 	display:flex;  
 	flex-direction:row;
 	height:100%; 
-	padding:0 $space--md;
-	transition: background .15s ease-in-out;
+	padding:0 16px;
+	transition: background .15s ease-in-out;      
 	
 	&:hover {
 		background:$neutral--4;
@@ -43,7 +43,7 @@ body {
 		.avatar {
 			&--image {  
 				margin-right:0;
-				margin-left:$space--sm; 
+				margin-left:12px; 
 			}
 		}
 	}
@@ -51,16 +51,17 @@ body {
 	&--email {     
 		@include type--xs;  
 		@include type_height--tight;
-		color:$neutral--3;
+		color:$neutral--3; 
+		white-space:nowrap;
 	}
 	
 	&--image {
 		background:url(../img/avatar.png); 
 		background-size:cover;
-		border-radius:$space--xxl;             
-		height:$space--xxl;  
-		margin-right:$space--sm;
-		width:$space--xxl;       
+		border-radius:40px;             
+		height:40px;  
+		margin-right:12px;
+		width:40px;       
 	}  
 	
 	&--info {                     
@@ -77,66 +78,58 @@ body {
 }
 
 .header {
-	background:$neutral--4;                 
+	background:$neutral--4;
+	border-bottom:solid 1px $neutral--5;                 
 	display:flex;    
-	height:60px;   
-	left:50%;
+	height:60px;    
+	left:60px;         
+	max-width:1600px;   
 	position:fixed;
-	top:0;
-  	transform:translateX(-50%);
-	width:1600px;
-	z-index:$level--4;  
+	right:0;
+	top:0;                     
+ 	width:100%;
+	z-index:$level--3;     
 	
-	&--account {
-		margin-left:auto;
-	}
+	@include breakpoint(xl){     
+		left:50%;  
+		padding-left:220px;         
+		right:auto;
+	  	transform:translateX(-50%);
+	} 
 	
-	&--branding {   
-		align-items:center;
-		border-right:solid 1px $neutral--6; 
-		display:flex;  
-		height:62px; 
-		padding:0 $space--md;
-		width:220px;
-	}
-	
-	&--company {
-		@include type--sm;
-		@include type_weight--book;                 
-		color:$white;
-		display:block;      
-  		letter-spacing:0.15em;  
-        text-transform:uppercase;
-   		transition: all .15s ease-in-out;
-	}
-	
-	&--mark {        
-		height:$space--lg;
-		margin-right:$space--md;          
-		width:$space--lg;
-		
-		svg {
-			fill:$neutral--2;
-			height:$space--lg; 
-			transition: all 0.15s ease-in-out; 
-			width:$space--lg;      
-		}
-	}
+	&--account { } 
 	
 	&--menu {
-		border-left:solid 1px $neutral--6;
+		border-left:solid 1px $neutral--6; 
 	}
 	
 	&--search {   
 		align-items:center;
-		display:flex;  
-		padding:0 $space--md;
+		display:flex; 
+		margin-right:60px; 
+		padding:0 16px;
 		width:460px;
+	}
+	
+	&--utilities { 
+		display:flex; 
+		flex-direction:row;    
+		height:100%;
+		margin-left:auto; 
+	  	transform:translateX(-60px); 
+	
+		@include breakpoint(xl){ 
+	  		transform:translateX(0);
+		}         
 	}
 }                                           
 
 .main {                     
-	padding:112px 0 0 220px;
+	padding:112px 20px 0 80px;
+	
+	@include breakpoint(xl){        
+		padding:112px 20px 0 220px;
+	}
 	
 	&--container {  
 		@include container--md; 
@@ -156,8 +149,8 @@ body {
 	
 	svg {
 		fill:$neutral--2;
-		height:$space--lg;                 
-		width:$space--lg;      
+		height:24px;                 
+		width:24px;      
 	}
 	
 	&--icon {                  
@@ -182,10 +175,8 @@ body {
 		display:none;
 		position:absolute;
 		right:0;
-		width:230px;
-		
-
-		
+		width:230px;  
+                     
 		&:after {  
 		    border:10px solid transparent;    
 			border-bottom-color:#fff;   
@@ -205,13 +196,13 @@ body {
 			@include type_weight--light;
 			color:$neutral--5;
 			display:flex; 
-			padding:$space--xxs $space--lg; 
+			padding:4px 24px; 
 			transition: all 0.15s ease-in-out;
 			
 			svg {  
 				fill:$neutral--5; 
-				margin-left:-$space--xxs;
-				margin-right:$space--xxs;
+				margin-left:-4px;
+				margin-right:4px;
 			}
 			
 			&:hover {
@@ -222,7 +213,7 @@ body {
 	
 	&--section {
 		border-bottom:solid 1px $neutral--1;
-		padding:$space--xs 0;
+		padding:8px 0;
 		
 		&:last-of-type {
 			border:none;
@@ -232,37 +223,79 @@ body {
 
 .nav { 
 	background:$neutral--4;    
-	border-right:solid 1px $neutral--5;
-	border-top:solid 1px $neutral--5;
-	bottom:0;                   
-	box-shadow:50px 0 100px rgba(0,0,0,0.8);
+	border-right:solid 1px $neutral--5; 
+	bottom:0;                    
 	overflow-y: scroll;
 	overflow-x: hidden;             
 	position:fixed;
-	top:60px;
-	width:220px; 
-	z-index:$level--4;
+	top:0px;      
+	transition:width 0.15s ease-in-out,box-shadow 0.15s ease-in-out;
+	width:60px;
+	z-index:$level--3;
+	
+	&:hover {       
+		box-shadow:50px 0 100px rgba(0,0,0,0.8);
+		width:220px;
+	}
+	
+	@include breakpoint(xl){   
+		width:220px;
+	}                  
 	
 	&--arrow { 
 		opacity:0;    
 		transition:all 0.15s ease-in-out;
-		width:$space--sm;
+		width:12px;
 		
 		svg {
 			fill:$neutral--1;
 		}
+	} 
+	
+	&--branding {   
+		align-items:center;       
+		border-bottom:solid 1px $neutral--5;
+		border-right:solid 1px $neutral--5;  
+		display:flex;  
+		height:60px; 
+		padding:0 18px;
+		overflow:hidden;
+		width:220px;
 	}
 	
-	&--icon {        
-		height:$space--lg;
-		margin-right:$space--md;          
-		width:$space--lg;
+	&--company {
+		@include type--sm;
+		@include type_weight--book;                 
+		color:$white;
+		display:block;      
+  		letter-spacing:0.15em;  
+        text-transform:uppercase;
+   		transition: all .15s ease-in-out;
+	}
+	
+	&--mark {        
+		height:24px;
+		margin-right:20px;          
+		width:24px;
 		
 		svg {
 			fill:$neutral--2;
-			height:$space--lg; 
+			height:24px; 
 			transition: all 0.15s ease-in-out; 
-			width:$space--lg;      
+			width:24px;      
+		}
+	}
+	
+	&--icon {        
+		height:24px;
+		margin-right:20px;          
+		width:24px;
+		
+		svg {
+			fill:$neutral--2;
+			height:24px; 
+			transition: all 0.15s ease-in-out; 
+			width:24px;      
 		}
 	}
 	
@@ -273,7 +306,7 @@ body {
 		color:$neutral--2;    
 		display:flex;       
 		height:44px;       
-		padding:0 $space--md;
+		padding:0 18px;
 		transition: all 0.15s ease-in-out; 
 		
 		&.active {
@@ -311,8 +344,8 @@ body {
 		border-top:solid 1px $neutral--6; 
 		display:flex;  
 		justify-content:space-between;
-		line-height:$space--xl;
-		padding:0 $space--md;
+		line-height:32px;
+		padding:0 16px;
 		text-transform:uppercase;
 		transition: all 0.15s ease-in-out;
 		
@@ -339,19 +372,19 @@ body {
 	width:100%;             
 	
 	&--icon {      
-		height:$space--lg; 
-		margin-left:$space--xs;
+		height:24px; 
+		margin-left:8px;
 		position:absolute;
-		width:$space--lg;
+		width:24px;
 		
 		svg { 
 			fill:$neutral--2;
-			height:$space--lg;       
-			width:$space--lg;
+			height:24px;       
+			width:24px;
 		}            
 		
 		& + input {
-			padding-left:$space--xxl;
+			padding-left:40px;
 		}
 	}
 }

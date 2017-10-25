@@ -1,24 +1,24 @@
 <div class="header"> 
-	<div class="header--branding">
-		<div class="header--mark"><svg><use xlink:href="svg/branding.svg#icon"></use></svg></div>
-		<div class="header--company">Pluralsight</div>
-	</div>
+
 	<div class="header--search">    
 		<div class="search">
 			<div class="search--icon"><svg><use xlink:href="svg/search.svg#icon"></use></svg></div>   
 			<input type="search" placeholder="What do you want to learn?" class="dark" />
 		</div>                                                                       
+	</div> 
+	<div class="header--utilities">
+		<div class="header--account"> 
+			<div class="avatar right"> 
+				<div class="avatar--image"></div>
+				<div class="avatar--info">
+					<div class="avatar--name">John Doe</div>
+					<div class="avatar--email">john-doe@pluralsight.com</div>
+				</div>
+			</div> 
+		</div>  
+		<div class="header--menu">
+			{% include more.html %}
+		</div>
 	</div>
-	<div class="header--account"> 
-		<div class="avatar right"> 
-			<div class="avatar--image"></div>
-			<div class="avatar--info">
-				<div class="avatar--name">John Doe</div>
-				<div class="avatar--email">john-doe@pluralsight.com</div>
-			</div>
-		</div> 
-	</div>  
-	<div class="header--menu">
-		{% include more.html %}
-	</div>
+
 </div>
