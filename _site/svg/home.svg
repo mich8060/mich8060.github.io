@@ -1,8 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg">
-	<symbol id="icon" viewBox="0 0 24 24">
-		<title>Home icon</title>
-		<g transform="translate(0,2)">
-			<path d="M12,0L0,8.5l0.6,0.9L12,1.3l11.4,8.1L24,8.5L12,0z M20.9,10.4h1v10.4h-1V10.4z M2.1,10.4h1v10.4h-1V10.4z M8.3,20.9h1v-7.3h5.2v7.3h1v-8.3H8.3V20.9z M3.1,1h2.1v1h1V0H2.1v4.2h1V1z"/>
-		</g>
-	</symbol>
-</svg>
