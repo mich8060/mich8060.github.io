@@ -1,0 +1,19 @@
+.type--sm { font-size: 14px; letter-spacing: -0.00px; line-height: 24px; }
+.type--md { font-size: 18px; letter-spacing: -0.00px; line-height: 32px; }
+.type--lg { font-size: 24px; letter-spacing: -0.36px; line-height: 40px; }
+.type--xl { font-size: 30px; letter-spacing: -0.45px; line-height: 48px; }
+.type--xxl { font-size: 36px; letter-spacing: -0.54px; line-height: 60px; }
+.type--xxxl { font-size: 48px; letter-spacing: -0.72px; line-height: 80px; }
+.type--gigantic { font-size: 60px; letter-spacing: -1.00px; line-height: 100px; }
+.type_weight--thin { font-weight: 100; }
+.type_weight--light { font-weight: 200; }
+.type_weight--regular { font-weight: 400; }
+.type_weight--semibold { font-weight: 500; }
+.type_weight--bold { font-weight: 700; }
+
+p.short:empty { display: block; }
+p.short:empty:before { content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In cursus justo sit amet purus bibendum, a tincidunt magna ullamcorper."; display: block; height: auto; }
+p.medium:empty { display: block; }
+p.medium:empty:before { content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In cursus justo sit amet purus bibendum, a tincidunt magna ullamcorper. Aliquam erat volutpat. Donec id varius tortor, eu semper enim. Nulla dictum et turpis a congue. Vivamus vel justo eget ex tincidunt efficitur non quis tellus."; display: block; height: auto; }
+p.long:empty { display: block; }
+p.long:empty:before { content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In cursus justo sit amet purus bibendum, a tincidunt magna ullamcorper. Aliquam erat volutpat. Donec id varius tortor, eu semper enim. Nulla dictum et turpis a congue. Vivamus vel justo eget ex tincidunt efficitur non quis tellus. Mauris ornare bibendum ex, at maximus diam porttitor quis. Nam fermentum massa in imperdiet vestibulum. Curabitur mattis lectus efficitur dignissim tempor."; display: block; height: auto; }

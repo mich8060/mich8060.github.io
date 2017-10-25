@@ -1,61 +1,9 @@
-                               <!DOCTYPE HTML>   
+<!DOCTYPE HTML>   
 <html lang="en-US">   
-<head>  
-<title>Design System</title>
-<meta charset="UTF-8"> 
-<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0" />
-<link rel="stylesheet" href="css/screen.css" />
-</head>
+{% include head.html %}
 <body>
 <div class="prism">
-	<div class="header"> 
-		<div class="header--branding">
-			<div class="header--mark"><svg><use xlink:href="svg/branding.svg#icon"></use></svg></div>
-			<div class="header--company">Pluralsight</div>
-		</div>
-		<div class="header--search">    
-			<div class="search">
-				<div class="search--icon"><svg><use xlink:href="svg/search.svg#icon"></use></svg></div>   
-				<input type="search" placeholder="What do you want to learn?" class="dark" />
-			</div>                                                                       
-		</div>
-		<div class="header--account"> 
-			<div class="avatar right"> 
-				<div class="avatar--image"></div>
-				<div class="avatar--info">
-					<div class="avatar--name">John Doe</div>
-					<div class="avatar--email">john-doe@pluralsight.com</div>
-				</div>
-			</div> 
-		</div>  
-		<div class="header--menu">
-			<div class="more">
-				<div class="more--icon"><svg><use xlink:href="svg/more.svg#icon"></use></svg></div>
-				<div class="more--menu">
-					<div class="more--section">
-						<a href="#">Account</a>
-						<a href="#">History</a>
-					</div>
-					<div class="more--section">
-						<a href="#">Business plans</a>
-						<a href="#">Integration features</a>
-						<a href="#">Mobile &amp; offline apps</a>
-						<a href="#">Resource center</a>
-						<a href="#">How-to videos</a>
-						<a href="#">Support</a>
-						<a href="#">Contact us</a>
-						<a href="#">Our authors</a>
-						<a href="#">Become an author</a>
-					</div>
-					<div class="more--section">
-						<a href="#">Terms of use</a>
-						<a href="#">Privacy policy</a>
-						<a href="#"><svg viewBox="0 0 24 24"><use xlink:href="svg/signout.svg#icon"></use></svg> Sign out</a>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+	{% include header.html %}
 	{% include nav.html %} 
 	<div class="main">
 		<div class="main--container">
@@ -63,7 +11,6 @@
 		</div>
 	</div>
 </div>
-<script src="js/jquery-3.2.1.min.js"></script>
-<script src="js/jquery.design-system.js"></script>
+{% include scripts.html %}
 </body>
 </html>

@@ -7,3 +7,10 @@ baseurl: ""
 
 title: Pluralsight Prototype     
 description: A virtual proof that name is awesome!
+email: mich8060@hotmail.com   
+
+permalink: /notes/:year/:month/:day/:title
+markdown: kramdown
+
+date_format: 'ordinal'     # July 3rd, 2014
+time_format: '%-I:%M %P'   # 2:08 pm
