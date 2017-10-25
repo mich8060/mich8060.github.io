@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg">
+	<symbol id="icon" viewBox="0 0 24 24">
+		<title>Notes icon</title>
+		<g transform="translate(2, 1)">
+			<path d="M2,1 L2,21 L16,21 L16,1 L2,1 L2,1 L2,1 L2,1 L2,1 L2,1 Z M17,0 L17,22 L1,22 L1,0 L17,0 L17,0 L17,0 L17,0 L17,0 L17,0 Z"></path>
+			<path d="M17,18 L19,18 L19,3 L17,3 L17,18 L17,18 L17,18 Z M20,19 L16,19 L16,2 L20,2 L20,19 L20,19 L20,19 Z"></path>
+			<path d="M7,8 L12,8 L12,5 L7,5 L7,8 Z M13,9 L6,9 L6,4 L13,4 L13,9 Z M17,6 L19,6 L19,7 L17,7 L17,6 Z M17,10 L19,10 L19,11 L17,11 L17,10 Z M17,14 L19,14 L19,15 L17,15 L17,14 Z M0,18 L3,18 L3,19 L0,19 L0,18 Z M0,15 L3,15 L3,16 L0,16 L0,15 Z M0,12 L3,12 L3,13 L0,13 L0,12 Z M0,9 L3,9 L3,10 L0,10 L0,9 Z M0,6 L3,6 L3,7 L0,7 L0,6 Z"></path>
+		</g>
+	</symbol>
+</svg>
