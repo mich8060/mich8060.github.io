@@ -235,7 +235,11 @@ body {
 	
 	&:hover {       
 		box-shadow:50px 0 100px rgba(0,0,0,0.8);
-		width:220px;
+		width:220px; 
+		
+		@include breakpoint(xl){         
+			box-shadow:none;
+		}
 	}
 	
 	@include breakpoint(xl){   

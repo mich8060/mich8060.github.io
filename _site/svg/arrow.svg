@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg"> 
+	<symbol id="icon" viewBox="0 0 10 7">
+		<title>Arrow indicator</title>
+		<g transform="translate(-1408.000000, -407.000000)">
+			<polygon transform="translate(1413.000000, 410.500000) scale(1, -1) rotate(-270.000000) translate(-1413.000000, -410.500000) " points="1409.5 406.375491 1413.68582 410.499302 1409.5 414.623112 1411.40213 415.5 1416.5 410.499302 1411.40213 405.5"></polygon>
+		</g>
+	</symbol>
+</svg>
