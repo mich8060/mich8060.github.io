@@ -1,5 +1,5 @@
 url: "https://mich8060.github.io"
-baseurl: ""
+baseurl: "/projects"
 
 # If you are building a GitHub project page then use these settings:
 #url: "http://username.github.io/projectname"
