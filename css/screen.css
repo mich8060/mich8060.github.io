@@ -255,7 +255,7 @@ display:inline;}
 /* line 28,../sass/_typography.scss */
 html{font-size:16px;line-height:24px;height:100%;-webkit-text-size-adjust:100%;-moz-text-size-adjust:100%;-ms-text-size-adjust:100%;-o-text-size-adjust:100%;text-size-adjust:100%;-webkit-text-rendering:optimizeLegibility;-moz-text-rendering:optimizeLegibility;-ms-text-rendering:optimizeLegibility;-o-text-rendering:optimizeLegibility;text-rendering:optimizeLegibility;}
 /* line 36,../sass/_typography.scss */
-body{font-family:"HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;font-size:100%;line-height:24px;font-weight:400;padding:0;margin:0;word-wrap:break-word;-moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased;-moz-font-smoothing:antialiased;-ms-font-smoothing:antialiased;-o-font-smoothing:antialiased;font-smoothing:antialiased;-webkit-hyphens:auto;-moz-hyphens:auto;-ms-hyphens:auto;-o-hyphens:auto;hyphens:auto;}
+body{font-family:"HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;font-size:100%;line-height:24px;font-weight:400;padding:0;margin:0;word-wrap:break-word;-moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased;-moz-font-smoothing:antialiased;-ms-font-smoothing:antialiased;-o-font-smoothing:antialiased;font-smoothing:antialiased;hyphens:none;}
 @media (-webkit-min-device-pixel-ratio:2),(min-resolution:192dpi){/* line 50,../sass/_typography.scss */
 body{-webkit-font-smoothing:antialiased;-moz-font-smoothing:antialiased;-ms-font-smoothing:antialiased;-o-font-smoothing:antialiased;font-smoothing:antialiased;}
 }
